@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Business name:</b>
+  <%= @business.business_name %>
+</p>
+
+<p>
+  <b>Tfn:</b>
+  <%= @business.tfn %>
+</p>
+
+<p>
+  <b>Abn:</b>
+  <%= @business.abn %>
+</p>
+
+<p>
+  <b>Postal addr 1:</b>
+  <%= @business.postal_addr_1 %>
+</p>
+
+<p>
+  <b>Postal addr 2:</b>
+  <%= @business.postal_addr_2 %>
+</p>
+
+<p>
+  <b>Postal addr suburb:</b>
+  <%= @business.postal_addr_suburb_id %>
+</p>
+
+<p>
+  <b>Street addr 1:</b>
+  <%= @business.street_addr_1 %>
+</p>
+
+<p>
+  <b>Street addr 2:</b>
+  <%= @business.street_addr_2 %>
+</p>
+
+<p>
+  <b>Street addr suburb:</b>
+  <%= @business.street_addr_suburb_id %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @business.email %>
+</p>
+
+
+<%= link_to 'Edit', edit_business_path(@business) %> |
+<%= link_to 'Back', businesses_path %>

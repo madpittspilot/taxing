@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  date: 2011-09-04
+  cat_code_id: 1
+  details: MyString
+  pay_method_id: 1
+  ref_no: MyString
+  pay_amount: 9.99
+  gst_cat_id: 1
+  gst_amount: 9.99
+  priv_use_percent: 9.99
+  priv_use_amount: 9.99
+
+two:
+  date: 2011-09-04
+  cat_code_id: 1
+  details: MyString
+  pay_method_id: 1
+  ref_no: MyString
+  pay_amount: 9.99
+  gst_cat_id: 1
+  gst_amount: 9.99
+  priv_use_percent: 9.99
+  priv_use_amount: 9.99

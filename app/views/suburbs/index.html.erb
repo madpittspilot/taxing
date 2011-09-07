@@ -1,0 +1,27 @@
+<h1>Listing suburbs</h1>
+
+<table>
+  <tr>
+    <th>Suburb</th>
+    <th>Postcode</th>
+    <th>State</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @suburbs.each do |suburb| %>
+  <tr>
+    <td><%= suburb.suburb %></td>
+    <td><%= suburb.postcode %></td>
+    <td><%= suburb.state_id %></td>
+    <td><%= link_to 'Show', suburb %></td>
+    <td><%= link_to 'Edit', edit_suburb_path(suburb) %></td>
+    <td><%= link_to 'Destroy', suburb, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Suburb', new_suburb_path %>

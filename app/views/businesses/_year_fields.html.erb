@@ -1,0 +1,7 @@
+<%= f.label :business_id %>
+<%= f.text_field :business_id %>
+<%= f.date_select :year, :start_year => Date.current.year + 5 , :end_year => Date.current.year - 7, :discard_day => true, :discard_month => true , :default => { :year => Date.current.year + 1 }  %>
+<%= select_year(Date.today, {:start_year => DateTime.now.year, :end_year => DateTime.now.year - 100}, {:name => 'year[year]'})  %>
+
+
+<%= f.link_to_remove "Remove this year" %>

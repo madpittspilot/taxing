@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  business_name: MyString
+  tfn: MyString
+  abn: MyString
+  postal_addr_1: MyString
+  postal_addr_2: MyString
+  postal_addr_suburb_id: 1
+  street_addr_1: MyString
+  street_addr_2: MyString
+  street_addr_suburb_id: 1
+  email: MyString
+
+two:
+  business_name: MyString
+  tfn: MyString
+  abn: MyString
+  postal_addr_1: MyString
+  postal_addr_2: MyString
+  postal_addr_suburb_id: 1
+  street_addr_1: MyString
+  street_addr_2: MyString
+  street_addr_suburb_id: 1
+  email: MyString

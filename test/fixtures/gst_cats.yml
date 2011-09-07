@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  category: MyString
+  gst_percent: 9.99
+
+two:
+  category: MyString
+  gst_percent: 9.99

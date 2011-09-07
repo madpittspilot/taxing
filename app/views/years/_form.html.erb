@@ -1,0 +1,41 @@
+<%= nested_form_for(@year) do |f| %>
+  <% if @year.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@year.errors.count, "error") %> prohibited this year from being saved:</h2>
+
+      <ul>
+      <% @year.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :year %><br />
+    <%= f.date_select :year %>
+  </div>
+  <div class="field">
+    <%= f.label :business_id %><br />
+    <%= f.number_field :business_id %>
+  </div>
+  
+  <% if ! @year.receipts.any? %>
+    noblah
+  <% else %>
+    blah
+  <% end %>
+  
+
+    
+  
+  <%= f.fields_for :receipts do |rec_build| %>
+
+      <%= render 'receipt_fields', :f => rec_build %>
+
+  <% end %>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

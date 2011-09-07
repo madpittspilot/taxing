@@ -1,0 +1,7 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  rec_category: MyString
+
+two:
+  rec_category: MyString

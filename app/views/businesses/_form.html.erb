@@ -1,0 +1,61 @@
+<%= nested_form_for(@business) do |f| %>
+  <% if @business.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@business.errors.count, "error") %> prohibited this business from being saved:</h2>
+
+      <ul>
+      <% @business.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :business_name %><br />
+    <%= f.text_field :business_name %>
+  </div>
+  <div class="field">
+    <%= f.label :tfn %><br />
+    <%= f.text_field :tfn %>
+  </div>
+  <div class="field">
+    <%= f.label :abn %><br />
+    <%= f.text_field :abn %>
+  </div>
+  <div class="field">
+    <%= f.label :postal_addr_1 %><br />
+    <%= f.text_field :postal_addr_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :postal_addr_2 %><br />
+    <%= f.text_field :postal_addr_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :postal_addr_suburb_id %><br />
+    <%= f.number_field :postal_addr_suburb_id %>
+  </div>
+  <div class="field">
+    <%= f.label :street_addr_1 %><br />
+    <%= f.text_field :street_addr_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :street_addr_2 %><br />
+    <%= f.text_field :street_addr_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :street_addr_suburb_id %><br />
+    <%= f.number_field :street_addr_suburb_id %>
+  </div>
+
+  <div class="field">     
+    <%= f.fields_for :years %>
+    <p><%= f.link_to_add "Add a Year", :years %></p><br />
+  </div>
+
+
+    
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
